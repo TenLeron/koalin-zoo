@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap');
+
+body {
+    margin: 0;
+    background: url("Assets/Background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* ===== PRVNÍ STRÁNKA ===== */
+header {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+header img {
+    width: 880px;
+    height: 480px;
+    margin: auto;
+}
+nav {
+    height: 60px;
+    display: flex;
+    margin-bottom: 250px;
+}
+nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    background: #8c461f;
+    color:white;
+    font-family: 'Exo', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    user-select: none;
+    margin-right: 25px;
+    margin-left: 25px;
+}  
+.Top-Line {
+    width: 100%;
+    height: 20px;
+    margin-top: 0;
+    background: #8c461f;
+}
+
+.Text_Nadpis {
+    color: white;
+    font-family: 'Exo', sans-serif;
+    font-size: 50px;
+    text-decoration: none;
+    user-select: none;
+    text-align: center;
+    margin-top: 100px;
+    padding: 5px;
+    background-color: #8c461f;
+}
+.Obsah_uvod {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+/* ===== PRVNÍ STRÁNKA ===== */
+
+/* ===== ÚVOD ===== */
+.Horni_uvod {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    display: flex;
+}
+.Uvod_vlevo {
+    display: block;
+    margin-left: 30px;
+}
+#Uvod_logo {
+    width: 550px;
+    height: 200px;
+    margin: auto;
+}
+#BackButton_vstupenky {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    left: 18px;
+}
+#BackButton {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 18px;
+    top: 208px;
+}
+.Uvod_vpravo {
+    display: block;
+    margin-top: 60px;
+    margin-right: 30px;
+}
+.Uvod_vpravo_text {
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-family: 'Exo', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    user-select: none;
+}
+.Uvod_vpravo_text_vetsi {
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-family: 'Exo', sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+    user-select: none;
+}
+.HR_uvod {
+    width: 85%;
+    height: 8px;
+    margin: auto;
+    background: white;
+}
+.Obsah1 {
+    display: flex;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 50px;
+    z-index: 1;
+}
+/* ===== ÚVOD ===== */
+
+/* ===== ZVÍŘATA ===== */
+.Obsah_vlevo {
+    display: block;
+    margin: auto;
+}
+.Obsah_vpravo {
+    display: block;
+    margin: auto;
+}
+.Zvirata_obrazek {
+    width: 540px;
+    height: 400px;
+    margin: auto;
+    z-index: -1;
+    border: 4px white solid;
+}
+.Zvirata_text {
+    text-align: left;
+    line-height: 32px;
+    color: white;
+    font-family: 'Exo', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    user-select: none;
+}
+.Zvirata_text_ohraniceni {
+    padding: 20px;
+    background-color: #208513;
+    border: 4px white solid;
+}
+/* ===== ZVÍŘATA ===== */
+
+/* ===== VSTUPENKY ===== */
+.Vstupenky_okno {
+    margin: auto;
+}
+#vstupenky {
+    font-family: 'Exo', sans-serif;
+    font-size: 20px;
+    border-collapse: collapse;
+    width: 1200px;
+    background-color: #208513;
+} 
+#vstupenky td, #vstupenky th {
+    border: 4px solid white;
+    padding: 16px;
+    color: white;
+}
+#vstupenky th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #208513;
+    color: white;
+}
+#Probehnuta_akce {
+    background-color: darkred;
+}
+.Button_koupit {
+    background-color: #8c461f;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+.Button_koupit:hover {
+    font-size: 20px;
+}
+.Legenda {
+    margin-bottom: 30px;
+    width: 350px;
+    border: 4px solid white;
+}
+.Vstupenky_Text {
+    font-family: 'Exo', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    color: white;
+    padding: 5px;
+    background-color: #208513;
+}
+/* ===== VSTUPENKY ===== */
+
+/* ===== ADOPCE ===== */
+.Adopce_grid {
+    display: grid;
+    grid-template: auto / auto auto auto auto;
+    grid-gap: 50px;
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 70px;
+    background-color: #18640e;
+    border: 4px solid white;
+    border-radius: 25px;
+}
+.Adopce_grid > div {
+    font-family: 'Exo', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.Adopce_text {
+    font-family: 'Exo', sans-serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.Adopce_input {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    padding: 8px;
+    background-color: #208513;
+    color: white;
+    font-family: 'Exo', sans-serif;
+    margin-top: 5px;
+}
+.Adopce_button {
+    font-family: 'Exo', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: 60px;
+    background-color: #208513;
+}
+.Adopce_cena {
+    font-family: 'Exo', sans-serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid white;
+    margin-top: 15px;
+}
+
+
+/* ===== ADOPCE ===== */
+
+/* ===== REZERVACE ===== */
+.Rezervace_form {
+    margin: auto;
+    background-color: #208513;
+    padding: 30px;
+    border-radius: 10px;
+    border: 4px solid white;
+    font-family: 'Exo', sans-serif;
+    width: 60%;
+}
+#Rezervace {
+    color: white;
+    font-family: Verdana;
+    font-size: 20px;
+    width: 100%;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #333333;
+    border-radius: 4px;
+}
+select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #333333;
+    border-radius: 4px;
+} 
+input[type=submit] {
+    width: 100%;
+    background-color: #18640e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+} 
+input[type=submit]:hover {
+    color: black;
+    background-color: white;
+}
+#Dalsi_pozadavky {
+    width: 100%;
+    height: 400px;
+}
+/* ===== REZERVACE ===== */
+
+/* ===== O NÁS ===== */
+.Onas_grid1 {
+    display: grid;
+    grid-template: auto / auto auto;
+    grid-gap: 50px;
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 50px;
+}
+.Onas_grid1 > div {
+    font-family: 'Exo', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.Onas_text2 {
+    text-align: center;
+    line-height: 32px;
+    color: white;
+    font-family: 'Exo', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    user-select: none;
+}
+.Onas_text_vetsi {
+    text-align: center;
+    line-height: 32px;
+    color: white;
+    font-family: 'Exo', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    user-select: none;
+    margin-top: 20px;
+}
+#Adresa {
+    width: auto;
+    height: 200px;
+    background-color: #208513;
+    border: 4px solid white;
+}
+.Mapa {
+    width: 800px;
+    height: 600px;
+    border: 4px solid white;
+}
+#adresa2 {
+    visibility: hidden;
+}
+#Copy_button {
+    margin-top: 8px;
+    color: white;
+    padding: 8px;
+    background-color: #18640e;
+    border: 2px solid white;
+    font-family: 'Exo', sans-serif;
+    font-size: 20px;
+}
+.Onas_grid2 {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: grid;
+    grid-template: auto / auto auto auto auto;
+    grid-gap: 50px;
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #208513;
+    border: 4px solid white;
+}
+.Onas_grid2 > div {
+    font-family: 'Exo', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+/* ===== O NÁS ===== */
+
+/* ===== FOOTER ===== */
+.Site_footer {
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+.grid-container {
+    display: grid;
+    grid-template: 160px / auto auto auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #208513;
+    padding: 10px;
+    border: 4px solid white;
+    border-radius: 25px 25px 0px 0px;
+}
+.grid-container > div {
+    font-family: 'Exo', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+#Petcenter {
+    height: 60px;
+    width: 220px;
+}
+#Superzoo {
+    width: 80px;
+    height: 80px;
+}
+.Footer_text {
+    text-align: center;
+    color: white;
+    font-family: 'Exo', sans-serif;
+    font-size: 20px;
+}
+.Footer_text_vetsi {
+    text-align: center;
+    color: white;
+    font-family: 'Exo', sans-serif;
+    font-size: 25px;
+}
+.Footer_button {
+    background-color: #18640e;
+    padding: 15px 15px;
+    text-align: center;
+    color: white;
+    font-family: 'Exo', sans-serif;
+    font-size: 20px;
+    border: 2px solid white;
+    text-decoration: none;
+}
+#Footer_button2 {
+    margin-top: 12px;
+}
+/* ===== FOOTER ===== */
+
+/* ANIMACE #8c461f */
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.09);
+        transform: scale(1.09);
+    }
+    100% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+.pulse {
+    animation: pulse infinite;
+    animation-duration: 4s;
+    display: inline-block;
+}
+
+.hvr-float-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.hvr-float-shadow:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+}
+/* Box Shadow Outset */
+.hvr-box-shadow-outset {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+}
+.hvr-box-shadow-outset:hover, .hvr-box-shadow-outset:focus, .hvr-box-shadow-outset:active {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+  
+/* Box Shadow Inset */
+.hvr-box-shadow-inset {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0);
+
+}
+.hvr-box-shadow-inset:hover, .hvr-box-shadow-inset:focus, .hvr-box-shadow-inset:active {
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: white;
+    height: 6px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }
+
+/* ANIMACE */

@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <title>Zoo Koalín</title>
+    <meta charset="Windows-1250" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Leron" />
+    <meta name="keywords" content="koalin, zoo" />
+    <meta name="description" content="Website for school project" />
+
+    <link rel="icon" type="image/png" href="Assets/ICON.png" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <script src="Assets/JQuery.js"></script>
+    <script src="Assets/Scripts.js"></script>
+</head>
+
+<body>
+    <div class="Horni_uvod">
+        <div class="Uvod_vlevo">
+            <img src="Assets/Logo_White.png" id="Uvod_logo" />
+        </div>
+        <div class="Uvod_vpravo">
+            <div class="Uvod_vpravo_text_vetsi">O nás</div>
+            <div class="Uvod_vpravo_text">
+                V této záložce se dozvíte informace o umístění naší zoo a kontakty na
+                vedení zoo.
+            </div>
+        </div>
+    </div>
+    <a href="index.html"><img src="Assets/Back.png" id="BackButton" /></a>
+    <div class="HR_uvod"></div>
+
+    <!-- UVODNI HORNI BAR -->
+
+    <div class="Onas_grid1">
+        <div class="item1" id="Adresa">
+            <div class="Onas_text_vetsi">Adresa:</div>
+            <div class="Onas_text2">Nivy 25</div>
+            <div class="Onas_text2">Tlumačov 763 62</div>
+            <div class="Onas_text2">Souřadnice: 49°14'51.7"N 17°30'12.5"E</div>
+            <span id="adresa2" value="Nivy 25 Tlumačov 763 62"></span>
+            <button onclick="copy()" id="Copy_button">Zkopírovat adresu</button>
+        </div>
+        <div class="item2">
+            <div class="Mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1302.2559672826094!2d17.50281565828008!3d49.2477419948319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x373304f677af39f5!2zNDnCsDE0JzUxLjkiTiAxN8KwMzAnMTQuMSJF!5e0!3m2!1scs!2scz!4v1641758862487!5m2!1scs!2scz"
+                    width="800" height="600" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="Onas_grid2">
+        <div class="item1">
+            <div class="Kontakty_text">Ředitel zoo</div>
+            <div class="Kontakty_text">Libor Prodělal</div>
+            <div class="Kontakty_text">libor.prodelal@zoo-koalin.cz</div>
+            <div class="Kontakty_text">+420 666 666 666</div>
+        </div>
+        <div class="item2">
+            <div class="Kontakty_text">Zástupce ředitele</div>
+            <div class="Kontakty_text">Veronika Ventluková</div>
+            <div class="Kontakty_text">veronika.ventlukova@zoo-koalin.cz</div>
+            <div class="Kontakty_text">+420 777 777 777</div>
+        </div>
+        <div class="item3">
+            <div class="Kontakty_text">Mluvčí zoo</div>
+            <div class="Kontakty_text">Andreas Tzimas</div>
+            <div class="Kontakty_text">andreas.tzimas@zoo-koalin.cz</div>
+            <div class="Kontakty_text">+420 888 888 888</div>
+        </div>
+        <div class="item4">
+            <div class="Kontakty_text">Hlavní ošetřovatel</div>
+            <div class="Kontakty_text">Jakub Solař</div>
+            <div class="Kontakty_text">jakub.solar@zoo-koalin.cz</div>
+            <div class="Kontakty_text">+420 999 999 99</div>
+        </div>
+    </div>
+
+    <footer class="Site_footer">
+        <div class="grid-container">
+            <div class="item1">
+                <div class="Footer_text_vetsi">Jaro</div>
+                <div class="Footer_text">Po: Zavřeno</div>
+                <div class="Footer_text">Út - Pá: 9:00 - 16:00</div>
+                <div class="Footer_text">So - Ne: 8:00 - 18:00</div>
+            </div>
+            <div class="item2">
+                <div class="Footer_text_vetsi">Léto</div>
+                <div class="Footer_text">Po: Zavřeno</div>
+                <div class="Footer_text">Út - Pá: 9:00 - 16:00</div>
+                <div class="Footer_text">So - Ne: 9:00 - 20:00</div>
+            </div>
+            <div class="item3">
+                <div class="Footer_text_vetsi">Podzim</div>
+                <div class="Footer_text">Po: Zavřeno</div>
+                <div class="Footer_text">Út - Pá: 9:00 - 16:00</div>
+                <div class="Footer_text">So - Ne: 8:00 - 18:00</div>
+            </div>
+            <div class="item4">
+                <div class="Footer_text_vetsi">Zima</div>
+                <div class="Footer_text">Po: Zavřeno</div>
+                <div class="Footer_text">Út - Pá: Zavřeno</div>
+                <div class="Footer_text">So - Ne: Zavřeno</div>
+            </div>
+            <div class="item5">
+                <a href="zvirata.html">
+                    <div class="Footer_button">Zvířata</div>
+                </a>
+                <a href="vstupenky.html">
+                    <div class="Footer_button" id="Footer_button2">Vstupenky</div>
+                </a>
+            </div>
+
+            <div class="item6">
+                <div class="Footer_text-vetsi">Sponzoři:</div>
+                <a href="https://www.petcenter.cz"><img src="Assets/Petcenter.png" id="Petcenter" /></a>
+                <a href="https://www.superzoo.cz"><img src="Assets/Superzoo.png" id="Superzoo" /></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

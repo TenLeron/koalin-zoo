@@ -1,0 +1,151 @@
+<html>
+
+<head>
+    <title> Zoo Koalín </title>
+    <meta charset="Windows-1250">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Leron">
+    <meta name="keywords" content="koalin, zoo">
+    <meta name="description" content="Website for school project">
+
+    <link rel="icon" type="image/png" href="Assets/ICON.png">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="Assets/JQuery.js"></script>
+    <script src="Assets/Scripts.js"></script>
+</head>
+
+<body>
+
+    <div class="Horni_uvod">
+        <div class="Uvod_vlevo">
+            <img src="Assets/Logo_White.png" id="Uvod_logo">
+        </div>
+        <div class="Uvod_vpravo">
+            <div class="Uvod_vpravo_text_vetsi"> Vstupenky </div>
+            <div class="Uvod_vpravo_text">V této záložce se dozvíte veškeré informace o vstupenkách. Vstupenky lze
+                zakoupit i on-line na našich stránkách.</div>
+        </div>
+    </div>
+    <a href="index.html"><img src="Assets/Back.png" id="BackButton_vstupenky"></a>
+    <div class="HR_uvod"></div>
+
+    <!-- UVODNI HORNI BAR -->
+
+    <div class="Obsah1">
+
+        <div class="Vstupenky_okno">
+            <table id="Vstupenky">
+                <tr>
+                    <th>Vstupenka</th>
+                    <th>Cena</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td> Celodenní vstupenka - dospělý</td>
+                    <td>179 Kč</td>
+                    <td onclick="koupit()" class="Button_koupit">Koupit</td>
+                </tr>
+                <tr>
+                    <td>Celodenní vstupenka - student</td>
+                    <td>119 Kč</td>
+                    <td onclick="koupit()" class="Button_koupit">Koupit</td>
+                </tr>
+                <tr>
+                    <td>Celodenní vstupenka - důchodce</td>
+                    <td>119 Kč</td>
+                    <td onclick="koupit()" class="Button_koupit">Koupit</td>
+                </tr>
+                <tr>
+                    <td>Celodenní vstupenka - dítě</td>
+                    <td>99 Kč</td>
+                    <td onclick="koupit()" class="Button_koupit">Koupit</td>
+                </tr>
+                <tr>
+                    <td>4 hodinová vstupenka - dospělý</td>
+                    <td>99 Kč</td>
+                    <td onclick="koupit()" class="Button_koupit">Koupit</td>
+                </tr>
+                <tr>
+                    <td>4 hodinová vstupenka - student</td>
+                    <td>89 Kč</td>
+                    <td onclick="koupit()" class="Button_koupit">Koupit</td>
+                </tr>
+                <tr>
+                    <td>4 hodinová vstupenka - důchodce</td>
+                    <td>89 Kč</td>
+                    <td onclick="koupit()" class="Button_koupit">Koupit</td>
+                </tr>
+                <tr>
+                    <td>4 hodinová vstupenka - dítě</td>
+                    <td>79 Kč</td>
+                    <td onclick="koupit()" class="Button_koupit">Koupit</td>
+                </tr>
+                <tr>
+                    <td>Celodenní rodinná vstupenka - 2 dospělý + 2 děti</td>
+                    <td>499 Kč</td>
+                    <td onclick="koupit()" class="Button_koupit">Koupit</td>
+                </tr>
+                <tr>
+                    <td>Celodenní rodinná vstupenka - 2 dospělý + 2 děti</td>
+                    <td>299 Kč</td>
+                    <td onclick="koupit()" class="Button_koupit">Koupit</td>
+                </tr>
+            </table>
+            <div class="Legenda">
+                <div class="Vstupenky_Text">Legenda: </div>
+                <div class="Vstupenky_Text">Student - nutno doložit studentským dokladem </div>
+                <div class="Vstupenky_Text">Důchodce - od věku 55 let </div>
+                <div class="Vstupenky_Text">Dítě - do věku 13 let </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <footer class="Site_footer">
+        <div class="grid-container">
+            <div class="item1">
+                <div class="Footer_text_vetsi">Jaro</div>
+                <div class="Footer_text">Po: Zavřeno</div>
+                <div class="Footer_text">Út - Pá: 9:00 - 16:00</div>
+                <div class="Footer_text">So - Ne: 8:00 - 18:00</div>
+            </div>
+            <div class="item2">
+                <div class="Footer_text_vetsi">Léto</div>
+                <div class="Footer_text">Po: Zavřeno</div>
+                <div class="Footer_text">Út - Pá: 9:00 - 16:00</div>
+                <div class="Footer_text">So - Ne: 9:00 - 20:00</div>
+            </div>
+            <div class="item3">
+                <div class="Footer_text_vetsi">Podzim</div>
+                <div class="Footer_text">Po: Zavřeno</div>
+                <div class="Footer_text">Út - Pá: 9:00 - 16:00</div>
+                <div class="Footer_text">So - Ne: 8:00 - 18:00</div>
+            </div>
+            <div class="item4">
+                <div class="Footer_text_vetsi">Zima</div>
+                <div class="Footer_text">Po: Zavřeno</div>
+                <div class="Footer_text">Út - Pá: Zavřeno</div>
+                <div class="Footer_text">So - Ne: Zavřeno</div>
+            </div>
+            <div class="item5">
+                <a href="o-nas.html">
+                    <div class="Footer_button">Kontakty</div>
+                </a>
+                <a href="rezervace.html">
+                    <div class="Footer_button" id="Footer_button2">Rezervace</div>
+                </a>
+            </div>
+
+            <div class="item6">
+                <div class="Footer_text-vetsi">Sponzoři: </div>
+                <a href="https://www.petcenter.cz"><img src="Assets/Petcenter.png" id="Petcenter"></a>
+                <a href="https://www.superzoo.cz"><img src="Assets/Superzoo.png" id="Superzoo"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

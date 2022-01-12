@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title> Zoo Koalín </title>
+    <meta charset="Windows-1250">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Leron">
+    <meta name="keywords" content="koalin, zoo">
+    <meta name="description" content="Website for school project">
+
+    <link rel="icon" type="image/png" href="Assets/ICON.png">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="Assets/JQuery.js"></script>
+    <script src="Assets/Scripts.js"></script>
+</head>
+
+<body>
+
+    <div class="Horni_uvod">
+        <div class="Uvod_vlevo">
+            <img src="Assets/Logo_White.png" id="Uvod_logo">
+        </div>
+        <div class="Uvod_vpravo">
+            <div class="Uvod_vpravo_text_vetsi"> Adopce </div>
+            <div class="Uvod_vpravo_text">V této záložce se dozvíte informace o dostupných adopcích zvířat z naší zoo a
+                vše spojené s ní.</div>
+        </div>
+    </div>
+    <a href="index.html"><img src="Assets/Back.png" id="BackButton"></a>
+    <div class="HR_uvod"></div>
+
+    <!-- UVODNI HORNI BAR -->
+
+    <div class="Adopce_grid">
+        <div class="item1">
+            <div class="Adopce_text">Adopce na dálku Československého vlčáka </div>
+        </div>
+
+        <div class="item2">
+            <input id="pocet_vlcak" type="number" value="1" min="1" max="5" class="Adopce_input">
+        </div>
+
+        <div class="item3">
+            <button onclick="spocitatCenu()" class="Adopce_button">Spočítat cenu</button>
+        </div>
+
+        <div class="item4">
+            <span id="cena_vlcak" class="Adopce_cena"></span>
+        </div>
+    </div>
+
+</body>
+
+</html>

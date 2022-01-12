@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <title> Zoo Koalín </title>
+    <meta charset="Windows-1250">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Leron">
+    <meta name="keywords" content="koalin, zoo">
+    <meta name="description" content="Website for school project">
+
+    <link rel="icon" type="image/png" href="Assets/ICON.png">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="Assets/JQuery.js"></script>
+    <script src="Assets/Scripts.js"></script>
+</head>
+
+<body>
+
+    <div class="Horni_uvod">
+        <div class="Uvod_vlevo">
+            <img src="Assets/Logo_White.png" id="Uvod_logo">
+        </div>
+        <div class="Uvod_vpravo">
+            <div class="Uvod_vpravo_text_vetsi"> Rezervace </div>
+            <div class="Uvod_vpravo_text">V této záložce Vám pomůžeme domluvit nejvhodnější termín dle Vašich požadavků
+                pro návštěvu naší zoo.</div>
+        </div>
+    </div>
+    <a href="index.html"><img src="Assets/Back.png" id="BackButton"></a>
+    <div class="HR_uvod"></div>
+
+    <!-- UVODNI HORNI BAR -->
+
+    <div class="Obsah1">
+        <div class="Rezervace_form">
+            <form id="Rezervace" action="">
+
+                <label for="fname">Křestní jméno:</label><br>
+                <input type="text" id="fname" placeholder="Křestní jméno..."><br>
+
+                <label for="lname">Příjmení:</label><br>
+                <input type="text" id="lname" placeholder="Příjmení..."><br>
+
+                <label for="email">E-mailová adresa:</label><br>
+                <input type="text" id="email" placeholder="Emailová adresa..."><br>
+
+                <label for="phonenumber">Telefonní číslo:</label><br>
+                <input type="text" id="phonenumber" placeholder="Telefonní číslo..."><br>
+
+                <label for="typ_rezervace">Typ rezervace:</label><br>
+                <select id="typ_rezervace">
+                    <option value="Zakladni_skola">Základní škola</option>
+                    <option value="Stredni_skola">Střední škola</option>
+                    <option value="Vysoka_skola">Vysoká škola</option>
+                    <option value="Firma">Firma</option>
+                    <option value="Jina_organizace">Jiná organizace</option>
+                </select><br>
+
+                <label for="Dalsi_pozadavky" id="Dalsi_pozadavky">Další požadavky k doplnění:</label><br>
+                <input type="text" id="lname" placeholder="Další požadavky..."><br>
+
+                <input type="submit" onclick="FormData()" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <footer class="Site_footer">
+        <div class="grid-container">
+            <div class="item1">
+                <div class="Footer_text_vetsi">Jaro</div>
+                <div class="Footer_text">Po: Zavřeno</div>
+                <div class="Footer_text">Út - Pá: 9:00 - 16:00</div>
+                <div class="Footer_text">So - Ne: 8:00 - 18:00</div>
+            </div>
+            <div class="item2">
+                <div class="Footer_text_vetsi">Léto</div>
+                <div class="Footer_text">Po: Zavřeno</div>
+                <div class="Footer_text">Út - Pá: 9:00 - 16:00</div>
+                <div class="Footer_text">So - Ne: 9:00 - 20:00</div>
+            </div>
+            <div class="item3">
+                <div class="Footer_text_vetsi">Podzim</div>
+                <div class="Footer_text">Po: Zavřeno</div>
+                <div class="Footer_text">Út - Pá: 9:00 - 16:00</div>
+                <div class="Footer_text">So - Ne: 8:00 - 18:00</div>
+            </div>
+            <div class="item4">
+                <div class="Footer_text_vetsi">Zima</div>
+                <div class="Footer_text">Po: Zavřeno</div>
+                <div class="Footer_text">Út - Pá: Zavřeno</div>
+                <div class="Footer_text">So - Ne: Zavřeno</div>
+            </div>
+            <div class="item5">
+                <a href="o-nas.html"><div class="Footer_button">Kontakty</div></a>
+                <a href="vstupenky.html"><div class="Footer_button" id="Footer_button2">Vstupenky</div></a>
+            </div>
+
+            <div class="item6">
+                <div class="Footer_text-vetsi">Sponzoři: </div>
+                <a href="https://www.petcenter.cz"><img src="Assets/Petcenter.png" id="Petcenter"></a>
+                <a href="https://www.superzoo.cz"><img src="Assets/Superzoo.png" id="Superzoo"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
